@@ -1,0 +1,23 @@
+{
+  "name": "nasaproject20110379",
+  "version": "1.0.0",
+  "description": "NASA Project 20110379",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run dev --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "npm run server & npm run client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "test": "npm test --prefix server && npm test --prefix client"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "nasaproject"
+  ],
+  "license": "ISC"
+}
